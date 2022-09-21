@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './main.css';
 
 let szinek = [
+    'white',
     'red',
     'orange',
     'yellow',
@@ -12,8 +13,14 @@ let szinek = [
     'purple',
 ];
 
+let aktualisSzin = 0;
+
 function szinvaltas() {
-    console.log('katt');
+    aktualisSzin = aktualisSzin + 1;
+    if (aktualisSzin >= szinek.length ) {
+        aktualisSzin = 0;
+    }
+    document.body.style.backgroundColor = szinek[aktualisSzin];
 }
 
 function init() {
