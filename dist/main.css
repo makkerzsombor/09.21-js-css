@@ -10910,3 +10910,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body > div{
+    width: 800px;
+    margin: auto;
+}
+body{
+    color: blueviolet;
+}
